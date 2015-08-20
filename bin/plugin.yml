@@ -1,0 +1,28 @@
+name: AutoQuestion
+main: net.meano.AutoQuestion.AutoQuestionMain
+version: 0.6
+author: Meano
+
+commands:
+  AutoQuestion:
+    description: 
+    usage: /AutoQuestion
+    aliases: [aq,ap]
+    permission: AutoQuestion.Answer
+    permission-message: 指令不允许。
+  AutoQuestionAdmin:
+    description: 
+    usage: /AutoQuestionAdmin
+    aliases: [aqa]
+    permission: AutoQuestion.Admin
+    permission-message: 指令不允许。
+permissions:
+  AutoQuestion.*:
+    default: op
+    children:
+      AutoQuestion.Answer: true
+      AutoQuestion.Admin: true
+  AutoQuestion.Admin:
+    default: op
+  AutoQuestion.Answer:
+    default: true

@@ -1,0 +1,24 @@
+Config:
+  Version: 3
+  CheckMinutes: 1
+  CheckLocationDifference: 7
+  WaitSeconds: 50
+  IdleAllowCounts: 6
+  OPExempt: true
+  IdleKickMessage: "服务器资源有限，维护复杂，请勿挂机，谢谢配合！"
+  CorrectMessage: "回答正确！继续游戏~"
+  WrongMessage: "回答错误！你所剩的时间不多了~"
+
+ExemptPlayers:
+  meano: true
+
+Questions:
+  A:
+    Q: "minecraft这个单词有几个字母？回答数字"
+    A: "9"
+  B:
+    Q: "minecraft 是由哪个工作室制作的？六个英文字符,不区分大小写"
+    A: "MOJANG"
+  C:
+    Q: "minecraft中合成工作台需要几块木板？回答数字"
+    A: "4"
